@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "react_native_jobs_app",
+    "scheme":"stock",
+    "slug": "react_native_jobs_app",
+    "platforms": ["ios", "android","web"],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+   
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*.{jpg,jpeg,png,html,js,css,json}"],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "permissions": ["CAMERA_ROLL", "READ_EXTERNAL_STORAGE", "WRITE_EXTERNAL_STORAGE"]
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ]
+    ],
+    "description": "Your app description here.",
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
